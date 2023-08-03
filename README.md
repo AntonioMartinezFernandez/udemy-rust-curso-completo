@@ -5,6 +5,7 @@
 - [Udemy Course](https://www.google.com/url?q=https://meet.google.com/mpd-mxug-rqv?hs%3D224&sa=D&source=calendar&usd=2&usg=AOvVaw1urQxtnbJ6EdBGUJ88mMEI)
 - [Rust Installation](https://www.rust-lang.org/tools/install)
 - [Rust Book](https://doc.rust-lang.org/book/)
+- [Rustlings -Rust exercises-](https://github.com/rust-lang/rustlings)
 
 ## First steps
 
@@ -105,3 +106,10 @@ cargo watch -x run
 ```
 
 ## Concepts
+
+- [Variables and Constants](https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html)
+- [Types](https://doc.rust-lang.org/book/ch03-02-data-types.html)
+- [Functions](https://doc.rust-lang.org/book/ch03-03-how-functions-work.html)
+- [Comments](https://doc.rust-lang.org/book/ch03-04-comments.html)
+- [Control Flow](https://doc.rust-lang.org/book/ch03-05-control-flow.html)
+- [Statement vs Expression](https://nickymeuleman.netlify.app/garden/rust-expression-statement)
