@@ -1,4 +1,4 @@
 fn main() {
-    let hello_message: &str = "Hello from Rust!";
-    println!("{}", hello_message);
+    let hello_message: &str = "Hello, Rust!";
+    println!("{hello_message}");
 }
