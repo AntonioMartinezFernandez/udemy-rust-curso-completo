@@ -113,3 +113,4 @@ cargo watch -x run
 - [Comments](https://doc.rust-lang.org/book/ch03-04-comments.html)
 - [Control Flow](https://doc.rust-lang.org/book/ch03-05-control-flow.html)
 - [Statement vs Expression](https://nickymeuleman.netlify.app/garden/rust-expression-statement)
+- [Ownership & Borrowing](https://progressivecoder.com/understanding-rust-ownership-and-borrowing-with-examples/)

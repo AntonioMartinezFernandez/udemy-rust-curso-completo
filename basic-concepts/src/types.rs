@@ -54,7 +54,7 @@ pub fn types() {
     let my_array: [i32; 5] = [1, 2, 3, 4, 5];
     println!("{}", my_array[0]);
 
-    // strings
+    // string literals
     let static_name: &'static str = "Kurt";
     let string_name: &str;
     string_name = "John";
