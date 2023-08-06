@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Udemy Course](https://www.google.com/url?q=https://meet.google.com/mpd-mxug-rqv?hs%3D224&sa=D&source=calendar&usd=2&usg=AOvVaw1urQxtnbJ6EdBGUJ88mMEI)
+- [Udemy Course](https://www.udemy.com/course/curso-completo-rust/)
 - [Rust Installation](https://www.rust-lang.org/tools/install)
 - [Rust Book](https://doc.rust-lang.org/book/)
 - [Rustlings -Rust exercises-](https://github.com/rust-lang/rustlings)
