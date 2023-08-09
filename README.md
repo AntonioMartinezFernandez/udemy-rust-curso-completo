@@ -1,5 +1,10 @@
 # Rust - Complete Course
 
+## Course Projects
+
+- [minigrep CLI tool](https://github.com/AntonioMartinezFernandez/udemy-rust-curso-completo/tree/main/minigrep)
+- [Tokio TCP Chat Server](https://github.com/AntonioMartinezFernandez/udemy-rust-curso-completo/tree/main/tokio-chat-server)
+
 ## Links
 
 - [Udemy Course](https://www.udemy.com/course/curso-completo-rust/)
@@ -156,6 +161,8 @@ cargo watch -x run
 - [WebAssembly Rust applications](https://rustwasm.github.io/docs/book/)
 - [Awesome Rust projects](https://github.com/rust-unofficial/awesome-rust)
 - [Rust repository trends](https://github.com/trending/rust)
+- [Tokio Async Runtime](https://tokio.rs/tokio/tutorial)
+- [Tokio vs. Async-std](https://medium.com/@AlexanderObregon/async-programming-in-rust-exploring-tokio-and-async-std-97d4b524cef0)
 
 ## Books
 
