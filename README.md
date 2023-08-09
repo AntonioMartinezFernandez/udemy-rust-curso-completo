@@ -4,6 +4,7 @@
 
 - [minigrep CLI tool](https://github.com/AntonioMartinezFernandez/udemy-rust-curso-completo/tree/main/minigrep)
 - [Tokio TCP Chat Server](https://github.com/AntonioMartinezFernandez/udemy-rust-curso-completo/tree/main/tokio-chat-server)
+- [Web Server](https://github.com/AntonioMartinezFernandez/udemy-rust-curso-completo/tree/main/web-server)
 
 ## Links
 
