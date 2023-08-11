@@ -6,6 +6,7 @@
 - [Tokio TCP Chat Server](https://github.com/AntonioMartinezFernandez/udemy-rust-curso-completo/tree/main/tokio-chat-server)
 - [Web Server](https://github.com/AntonioMartinezFernandez/udemy-rust-curso-completo/tree/main/web-server)
 - [Twitter API clone](https://github.com/AntonioMartinezFernandez/udemy-rust-curso-completo/tree/main/twitter-api-clone)
+- [Cryptocurrency Prices WASM](https://github.com/AntonioMartinezFernandez/udemy-rust-curso-completo/tree/main/crypto-prices-wasm)
 
 ## Links
 
