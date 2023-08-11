@@ -5,6 +5,7 @@
 - [minigrep CLI tool](https://github.com/AntonioMartinezFernandez/udemy-rust-curso-completo/tree/main/minigrep)
 - [Tokio TCP Chat Server](https://github.com/AntonioMartinezFernandez/udemy-rust-curso-completo/tree/main/tokio-chat-server)
 - [Web Server](https://github.com/AntonioMartinezFernandez/udemy-rust-curso-completo/tree/main/web-server)
+- [Twitter API clone](https://github.com/AntonioMartinezFernandez/udemy-rust-curso-completo/tree/main/twitter-api-clone)
 
 ## Links
 
@@ -129,6 +130,42 @@ Run
 cargo watch -x run
 ```
 
+### Diesel
+
+IMPORTANT for Windows users:
+
+- Download PosgreSQL v15.3 binaries from https://www.enterprisedb.com/download-postgresql-binaries
+- Copy next files from **ZIP file**...
+
+  - **libpq.lib** into _C:/Users/USER_NAME/.rustup/toolchains/stable-x86_64-pc-windows-msvc/lib/rustlib/x86_64-pc-windows-msvc/lib_ folder
+  - **libcrypto-1_1.dll**, **libcrypto-3-x64.dll**, **libiconv-2.dll**, **libintl-9.dll**, **libpq.dll**, **libssl-1_1.dll**, **libssl-3-x64.dll** and **libwinpthread-1.dll** into _C:/Users/USER_NAME/.cargo/bin_
+
+Install Diesel CLI:
+
+```
+cargo install diesel_cli --no-default-features --features postgres
+```
+
+Create Diesel setup -create and applicate migrations- (from root folder of the project)
+
+_IMPORTANT_: before execute this command, check the postgresql is running, and _.env_ file is created with the _DATABASE_URL_ variable
+
+```
+diesel setup
+```
+
+Create new migration
+
+```
+diesel migration generate database_name
+```
+
+Apply migrations
+
+```
+diesel migration run
+```
+
 ## Concepts
 
 - [Variables and Constants](https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html)
@@ -164,6 +201,9 @@ cargo watch -x run
 - [Rust repository trends](https://github.com/trending/rust)
 - [Tokio Async Runtime](https://tokio.rs/tokio/tutorial)
 - [Tokio vs. Async-std](https://medium.com/@AlexanderObregon/async-programming-in-rust-exploring-tokio-and-async-std-97d4b524cef0)
+- [Diesel ORM and Query Builder for Rust -MySQL, PostreSQL, SQLite-](https://diesel.rs/)
+- [Convert Struct Instances to and from JSON](https://turreta.com/blog/2019/09/22/rust-convert-struct-instances-to-and-from-json/)
+- [Building a RESTful API with Actix and Diesel](https://blog.ediri.io/building-a-restful-api-with-actix-web-and-diesel-for-persistent-data-storage)
 
 ## Books
 

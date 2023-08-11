@@ -1,0 +1,241 @@
+{
+	"info": {
+		"_postman_id": "c25a4ce6-a356-4a98-9356-e8f3254822b8",
+		"name": "twitter-api-clone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20801644"
+	},
+	"item": [
+		{
+			"name": "/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/tweets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/tweets",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"tweets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/tweet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"message\": \"my favourite tweet!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/tweet",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"tweet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/tweet/{id}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"foo\":\"bar\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/tweet/0a767db7-2147-4fb7-979c-6583e22d2b3f",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"tweet",
+						"0a767db7-2147-4fb7-979c-6583e22d2b3f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/tweet/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"foo\":\"bar\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/tweet/a4ec9972-7a80-478f-a444-152cfb6887c7",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"tweet",
+						"a4ec9972-7a80-478f-a444-152cfb6887c7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/tweet/{id}/likes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"foo\":\"bar\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/tweet/a4ec9972-7a80-478f-a444-152cfb6887c7/likes",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"tweet",
+						"a4ec9972-7a80-478f-a444-152cfb6887c7",
+						"likes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/tweet/{id}/like",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"foo\":\"bar\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/tweet/a4ec9972-7a80-478f-a444-152cfb6887c7/like",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"tweet",
+						"a4ec9972-7a80-478f-a444-152cfb6887c7",
+						"like"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/tweet/{id}/like",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"foo\":\"bar\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/tweet/4534fd20-c7d1-4f56-bd1e-d6e9363b0254/like",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"tweet",
+						"4534fd20-c7d1-4f56-bd1e-d6e9363b0254",
+						"like"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "http://localhost:8000",
+			"type": "string"
+		}
+	]
+}
