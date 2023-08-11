@@ -166,6 +166,67 @@ Apply migrations
 diesel migration run
 ```
 
+### Create WebAssembly Application
+
+Install [wasm-pack](https://rustwasm.github.io/wasm-pack/). If you're using Windows, you will need to disable SmartScreen protection.
+
+Create a new project as library
+
+```
+cargo new wasm-app-project --lib
+```
+
+See which platforms we can compile the binary for
+
+```
+rustc --print target-list
+```
+
+Download the platform compiler
+
+```
+rustup target add <platform>
+
+Example:
+rustup target add wasm32-unknown-unknown
+```
+
+Compile project for WebAssembly
+
+```
+32bits:
+cargo build --target wasm32-unknown-unknown
+
+64bits:
+cargo build --target wasm64-unknown-unknown
+```
+
+Include the next line in the 'lib' section of Cargo.toml file
+
+```
+crate-type = ["cdylib", "rlib"]
+```
+
+Include the next line in the 'dependencies' section of Cargo.toml file
+
+```
+wasm-bindgen = "0.2.87"
+```
+
+Run wasm-pack builder
+
+```
+wasm-pack build --release --target web
+```
+
+You will have available your project in the folder
+
+```
+<wasm-app-project>/pkg
+```
+
+Import the project in a JS script embedded in an HTML. You can see an example [here](https://github.com/AntonioMartinezFernandez/udemy-rust-curso-completo/webassembly/webapp/index.html)
+
 ## Concepts
 
 - [Variables and Constants](https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html)
@@ -204,6 +265,9 @@ diesel migration run
 - [Diesel ORM and Query Builder for Rust -MySQL, PostreSQL, SQLite-](https://diesel.rs/)
 - [Convert Struct Instances to and from JSON](https://turreta.com/blog/2019/09/22/rust-convert-struct-instances-to-and-from-json/)
 - [Building a RESTful API with Actix and Diesel](https://blog.ediri.io/building-a-restful-api-with-actix-web-and-diesel-for-persistent-data-storage)
+- [WebAssembly Rust](https://www.rust-lang.org/what/wasm)
+- [wasm-bindgen - high level interactions between Wasm modules and Javascript](https://crates.io/crates/wasm-bindgen)
+- [wasm-pack - Rust wasm workflow tool](https://rustwasm.github.io/wasm-pack/)
 
 ## Books
 
