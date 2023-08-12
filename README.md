@@ -7,6 +7,7 @@
 - [Web Server](https://github.com/AntonioMartinezFernandez/udemy-rust-curso-completo/tree/main/web-server)
 - [Twitter API clone](https://github.com/AntonioMartinezFernandez/udemy-rust-curso-completo/tree/main/twitter-api-clone)
 - [Cryptocurrency Prices WASM](https://github.com/AntonioMartinezFernandez/udemy-rust-curso-completo/tree/main/crypto-prices-wasm)
+- [YouTube Search - Fullstack WASM](https://github.com/AntonioMartinezFernandez/udemy-rust-curso-completo/tree/main/youtube-search)
 
 ## Links
 
@@ -177,16 +178,16 @@ Create a new project as library
 cargo new wasm-app-project --lib
 ```
 
-See which platforms we can compile the binary for
+See which hardware architectures we can compile the binary for
 
 ```
 rustc --print target-list
 ```
 
-Download the platform compiler
+Download the architecture compiler
 
 ```
-rustup target add <platform>
+rustup target add <architecture>
 
 Example:
 rustup target add wasm32-unknown-unknown
