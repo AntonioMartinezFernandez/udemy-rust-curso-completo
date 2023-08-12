@@ -8,6 +8,7 @@
 - [Twitter API clone](https://github.com/AntonioMartinezFernandez/udemy-rust-curso-completo/tree/main/twitter-api-clone)
 - [Cryptocurrency Prices WASM](https://github.com/AntonioMartinezFernandez/udemy-rust-curso-completo/tree/main/crypto-prices-wasm)
 - [YouTube Search - Fullstack WASM](https://github.com/AntonioMartinezFernandez/udemy-rust-curso-completo/tree/main/youtube-search)
+- [SQLite Database](https://github.com/AntonioMartinezFernandez/udemy-rust-curso-completo/tree/main/sqlite-db)
 
 ## Links
 
